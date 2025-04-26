@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication - Ahjin Code Conclave</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="auth.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <a href="index.html" class="back-btn">
+                    <span class="material-icons">arrow_back</span>
+                </a>
+                <div class="logo">
+                    <h1>Ahjin Code Conclave</h1>
+                </div>
+                <button class="theme-toggle" id="theme-toggle" title="Toggle light/dark mode">
+                    <span class="material-icons sun-icon">light_mode</span>
+                    <span class="material-icons moon-icon">dark_mode</span>
+                </button>
+            </div>
+
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Login</button>
+                <button class="auth-tab" data-tab="register">Register</button>
+            </div>
+
+            <div class="auth-content">
+                <!-- Login Form -->
+                <form id="loginForm" class="auth-form active">
+                    <h2>Welcome Back</h2>
+                    <p class="auth-subtitle">Sign in to continue to Ahjin Code Conclave</p>
+
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <div class="input-with-icon">
+                            <span class="material-icons">email</span>
+                            <input type="email" id="loginEmail" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <div class="input-with-icon">
+                            <span class="material-icons">lock</span>
+                            <input type="password" id="loginPassword" name="password" required>
+                            <button type="button" class="toggle-password">
+                                <span class="material-icons">visibility_off</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="rememberMe" name="rememberMe">
+                            <label for="rememberMe">Remember me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="primary-btn">
+                        <span class="material-icons">login</span>
+                        Login
+                    </button>
+
+                    <div class="divider">
+                        <span>or continue with</span>
+                    </div>
+
+                    <div class="social-auth">
+                        <button type="button" id="googleLogin" class="social-btn google-btn">
+                            <img src="images/google-icon.png" alt="Google">
+                            <span>Google</span>
+                        </button>
+                        <button type="button" id="githubLogin" class="social-btn github-btn">
+                            <img src="images/github-icon.png" alt="GitHub">
+                            <span>GitHub</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Register Form -->
+                <form id="registerForm" class="auth-form">
+                    <h2>Create Account</h2>
+                    <p class="auth-subtitle">Join the Ahjin Code Conclave community</p>
+
+                    <div class="form-group">
+                        <label for="registerName">Full Name</label>
+                        <div class="input-with-icon">
+                            <span class="material-icons">person</span>
+                            <input type="text" id="registerName" name="name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerEmail">Email</label>
+                        <div class="input-with-icon">
+                            <span class="material-icons">email</span>
+                            <input type="email" id="registerEmail" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+                        <div class="input-with-icon">
+                            <span class="material-icons">lock</span>
+                            <input type="password" id="registerPassword" name="password" required>
+                            <button type="button" class="toggle-password">
+                                <span class="material-icons">visibility_off</span>
+                            </button>
+                        </div>
+                        <div class="password-strength">
+                            <div class="strength-meter">
+                                <div class="strength-segment"></div>
+                                <div class="strength-segment"></div>
+                                <div class="strength-segment"></div>
+                                <div class="strength-segment"></div>
+                            </div>
+                            <span class="strength-text">Password strength</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="input-with-icon">
+                            <span class="material-icons">lock</span>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                            <button type="button" class="toggle-password">
+                                <span class="material-icons">visibility_off</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-options terms">
+                        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                        <label for="agreeTerms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                    </div>
+
+                    <button type="submit" class="primary-btn">
+                        <span class="material-icons">person_add</span>
+                        Register
+                    </button>
+
+                    <div class="divider">
+                        <span>or sign up with</span>
+                    </div>
+
+                    <div class="social-auth">
+                        <button type="button" id="googleRegister" class="social-btn google-btn">
+                            <img src="images/google-icon.png" alt="Google">
+                            <span>Google</span>
+                        </button>
+                        <button type="button" id="githubRegister" class="social-btn github-btn">
+                            <img src="images/github-icon.png" alt="GitHub">
+                            <span>GitHub</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Message Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content success-modal">
+            <div class="success-icon">
+                <span class="material-icons">check_circle</span>
+            </div>
+            <h2>Success!</h2>
+            <p id="successMessage">You have successfully authenticated.</p>
+            <button class="primary-btn" id="successDoneBtn">
+                <span class="material-icons">home</span>
+                Back to Home
+            </button>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    
+    <script src="auth.js"></script>
+</body>
+</html>
