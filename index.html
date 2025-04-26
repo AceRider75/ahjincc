@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahjin Code Conclave</title>
+    <link rel="stylesheet" href="landing.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="parallax-container">
+        <div class="parallax-bg" id="parallax-bg"></div>
+        
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <h1>Ahjin Code Conclave</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#admins">Admins</a></li>
+                    <li><a href="#competitors">Competitors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" title="Toggle light/dark mode" aria-label="auto">
+                    <span class="material-icons sun-icon">light_mode</span>
+                    <span class="material-icons moon-icon">dark_mode</span>
+                </button>
+                <button class="login-btn" id="login-btn">
+                    <span class="material-icons">login</span>
+                    Login
+                </button>
+            </div>
+            <div class="mobile-menu-btn">
+                <span class="material-icons">menu</span>
+            </div>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-close">
+                <span class="material-icons">close</span>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#admins">Admins</a></li>
+                <li><a href="#competitors">Competitors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-actions">
+                <button class="login-btn" id="mobile-login-btn">
+                    <span class="material-icons">login</span>
+                    Login
+                </button>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to <span class="gradient-text">Ahjin Code Conclave</span></h1>
+                <p>A community where coders unite, learn, and grow together</p>
+                <div class="hero-buttons">
+                    <button class="primary-btn" id="register-btn">
+                        <span class="material-icons">person_add</span>
+                        Join the Community
+                    </button>
+                    <button class="secondary-btn">
+                        <span class="material-icons">explore</span>
+                        Explore Resources
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.png" alt="Coding illustration">
+            </div>
+        </section>
+    </div>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="section-header">
+            <h2>Learning <span class="gradient-text">Resources</span></h2>
+            <p>Explore our curated collection of coding resources</p>
+        </div>
+        <div class="resources-grid">
+            <div class="resource-card" data-aos="fade-up">
+                <div class="resource-icon">
+                    <span class="material-icons">code</span>
+                </div>
+                <h3>Programming Basics</h3>
+                <p>Fundamental concepts for beginners</p>
+                <a href="#" class="resource-link">Explore <span class="material-icons">arrow_forward</span></a>
+            </div>
+            <div class="resource-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="resource-icon">
+                    <span class="material-icons">web</span>
+                </div>
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript and more</p>
+                <a href="#" class="resource-link">Explore <span class="material-icons">arrow_forward</span></a>
+            </div>
+            <div class="resource-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="resource-icon">
+                    <span class="material-icons">data_object</span>
+                </div>
+                <h3>Data Structures</h3>
+                <p>Efficient ways to organize data</p>
+                <a href="#" class="resource-link">Explore <span class="material-icons">arrow_forward</span></a>
+            </div>
+            <div class="resource-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="resource-icon">
+                    <span class="material-icons">psychology</span>
+                </div>
+                <h3>Algorithms</h3>
+                <p>Problem-solving techniques</p>
+                <a href="#" class="resource-link">Explore <span class="material-icons">arrow_forward</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admins Section -->
+    <section id="admins" class="admins">
+        <div class="section-header">
+            <h2>Meet Our <span class="gradient-text">Admins</span></h2>
+            <p>The brilliant minds behind Ahjin Code Conclave</p>
+        </div>
+        <div class="admins-grid">
+            <div class="admin-card" data-aos="flip-left">
+                <div class="admin-image">
+                    <img src="images/admin1.jpg" alt="Admin 1">
+                </div>
+                <div class="admin-info">
+                    <h3>Alex Chen</h3>
+                    <p class="admin-role">Founder & Lead Developer</p>
+                    <p class="admin-bio">Full-stack developer with 8+ years of experience in building scalable web applications.</p>
+                    <div class="admin-socials">
+                        <a href="#"><span class="material-icons">language</span></a>
+                        <a href="#"><span class="material-icons">alternate_email</span></a>
+                        <a href="#"><span class="material-icons">code</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="admin-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="admin-image">
+                    <img src="images/admin2.jpg" alt="Admin 2">
+                </div>
+                <div class="admin-info">
+                    <h3>Mira Patel</h3>
+                    <p class="admin-role">Community Manager</p>
+                    <p class="admin-bio">Passionate about building inclusive coding communities and organizing tech events.</p>
+                    <div class="admin-socials">
+                        <a href="#"><span class="material-icons">language</span></a>
+                        <a href="#"><span class="material-icons">alternate_email</span></a>
+                        <a href="#"><span class="material-icons">code</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="admin-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="admin-image">
+                    <img src="images/admin3.jpg" alt="Admin 3">
+                </div>
+                <div class="admin-info">
+                    <h3>Jordan Lee</h3>
+                    <p class="admin-role">Content Curator</p>
+                    <p class="admin-bio">Specializes in creating educational content and maintaining resource directories.</p>
+                    <div class="admin-socials">
+                        <a href="#"><span class="material-icons">language</span></a>
+                        <a href="#"><span class="material-icons">alternate_email</span></a>
+                        <a href="#"><span class="material-icons">code</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitors Section -->
+    <section id="competitors" class="competitors">
+        <div class="section-header">
+            <h2>Top <span class="gradient-text">Competitors</span></h2>
+            <p>Meet our community's coding champions</p>
+        </div>
+        <div class="competitors-grid">
+            <!-- Competitor 1 -->
+            <div class="flip-card" data-aos="fade-up">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/pokemon1.png" alt="Charizard">
+                        <h3>Fire Coder</h3>
+                        <p>Specializes in Backend Development</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Charizard</h3>
+                        <div class="stats">
+                            <div class="stat">
+                                <span>Coding: 95/100</span>
+                                <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+                            </div>
+                            <div class="stat">
+                                <span>Problem Solving: 90/100</span>
+                                <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="stat">
+                                <span>Algorithms: 88/100</span>
+                                <div class="progress-bar"><div class="progress" style="width: 88%"></div></div>
+                            </div>
+                        </div>
+                        <p>Won 15 coding competitions and contributed to 20+ open source projects.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Competitor 2 -->
+            <div class="flip-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/pokemon2.png" alt="Blastoise">
+                        <h3>Water Wizard</h3>
+                        <p>Specializes in Frontend Development</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Blastoise</h3>
+                        <div class="stats">
+                            <div class="stat">
+                                <span>UI/UX: 96/100</span>
+                                <div class="progress-bar"><div class="progress" style="width: 96%"></div></div>
+                            </div>
+                            <div class="stat">
+                                <span>JavaScript: 92/100</span>
+                                <div class="progress-bar"><div class="progress" style="width: 92%"></div></div>
+                            </div>
+                            <div class="stat">
+                                <span>Responsive Design: 94/100</span>
+                                <div class="progress-bar"><div class="progress" style="width: 94%"></div></div>
+                            </div>
+                        </div>
+                        <p>Created 30+ stunning web applications with flawless user experiences.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Competitor 3 -->
+            <div class="flip-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/pokemon3.png" alt="Venusaur">
+                        <h3>Grass Guru</h3>
+                        <p>Specializes in Data Science</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Venusaur</h3>
+                        <div class="stats">
+                            <div class="stat">
+                                <span>Machine Learning: 93/100</span>
+                                <div class="progress-bar"><div class="progress" style="width: 93%"></div></div>
+                            </div>
+                            <div class="stat">
+                                <span>Data Analysis: 95/100</span>
+                                <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+                            </div>
+                            <div class="stat">
+                                <span>Python: 91/100</span>
+                                <div class="progress-bar"><div class="progress" style="width: 91%"></div></div>
+                            </div>
+                        </div>
+                        <p>Published 5 research papers on innovative data science applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Get in <span class="gradient-text">Touch</span></h2>
+            <p>Have questions? We'd love to hear from you!</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="material-icons">location_on</span>
+                    <div>
+                        <h3>Location</h3>
+                        <p>123 Code Street, Tech Valley, CA 94043</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="material-icons">email</span>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@ahjincodeconclave.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="material-icons">phone</span>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><span class="material-icons">language</span></a>
+                    <a href="#"><span class="material-icons">alternate_email</span></a>
+                    <a href="#"><span class="material-icons">code</span></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="primary-btn">
+                        <span class="material-icons">send</span>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Ahjin Code Conclave</h2>
+                <p>Coding community for passionate developers</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#admins">Admins</a></li>
+                        <li><a href="#competitors">Competitors</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Challenges</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ahjin Code Conclave. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login/Register Modal -->
+    <div class="modal" id="authModal">
+        <div class="modal-content">
+            <div class="modal-close">
+                <span class="material-icons">close</span>
+            </div>
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Login</button>
+                <button class="auth-tab" data-tab="register">Register</button>
+            </div>
+            <div class="auth-forms">
+                <!-- Login Form -->
+                <form id="loginForm" class="auth-form active">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" name="password" required>
+                    </div>
+                    <div class="form-group remember-me">
+                        <input type="checkbox" id="rememberMe" name="rememberMe">
+                        <label for="rememberMe">Remember me</label>
+                    </div>
+                    <button type="submit" class="primary-btn">
+                        <span class="material-icons">login</span>
+                        Login
+                    </button>
+                    <div class="form-footer">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </form>
+                
+                <!-- Register Form -->
+                <form id="registerForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="registerName">Full Name</label>
+                        <input type="text" id="registerName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email</label>
+                        <input type="email" id="registerEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+                        <input type="password" id="registerPassword" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    <div class="form-group terms">
+                        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                        <label for="agreeTerms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                    </div>
+                    <button type="submit" class="primary-btn">
+                        <span class="material-icons">person_add</span>
+                        Register
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="landing.js"></script>
+</body>
+</html>
